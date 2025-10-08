@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins';
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(image/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+
+.main .box {
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+nav {
+  display: flex;
+  max-width: 80vw;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  height: 62px;
+}
+
+nav img {
+  color: red;
+  width: 114px;
+  position: relative;
+  z-index: 1;
+}
+
+nav button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  z-index: 3;
+  gap: 23px;
+  padding: 0 30px;
+
+
+}
+
+.hero> :nth-child(1) {
+  font-family: "poppins";
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero> :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero> :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(79, 78, 78);
+}
+
+.btn {
+  padding: 3x 8px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.btn-red {
+  background-color: red;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.main input {
+  padding: 7px 101px 8px 14px;
+  font-weight: 900;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  background-color: rgba(23, 23, 23, 0.7);
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.scrollbar {
+  display: flex;
+  overflow-x: auto;
+  gap: 35px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.section-item img {
+  width: 190px;
+  border-radius: 10px;
+  transition: transform 0.1 ease;
+
+}
+
+.section-item img:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  padding: 60px 110px;
+  background-color: #141414;
+  color: white;
+}
+
+.title {
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rank {
+  position: absolute;
+  top: 70%;
+  margin-left: -15px;
+  transform: translateY(-50%);
+  font-size: 100px;
+  font-weight: 2000;
+
+  color: black;
+  -webkit-text-stroke: 2px white;
+  z-index: 2;
+  transition: transform 0.1 ease;
+}
+
+.section-item:hover .rank {
+
+  transform: translateY(-50%)skew(-1deg)scale(1.1);
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+}
+
+.join {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+h3.header {
+  color: aliceblue;
+}
+
+.i1 h3,
+.i2 h3,
+.i3 h3,
+.i4 h3 {
+  color: aliceblue;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+
+
+.i1,
+.i2,
+.i3,
+.i4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1a0033, #2e004f);
+  border: 2px white;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 10px;
+  align-items: center;
+  gap: 10px;
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: row;
+    /* change to row layout */
+    flex-wrap: wrap;
+    /* allow wrapping if needed */
+    justify-content: center;
+  }
+}
+
+.faqbox span{
+  display: flex;
+  justify-content:space-between;
+  background-color: rgb(54, 52, 52);
+  padding: 24px;
+  margin: 34px auto;
+  cursor: pointer;
+}
+.faqbox span:hover{
+  transition: all 0.1s ease-out;
+  background-color:rgb(123, 123, 117);
+}
+.q1 {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+footer{
+  color:white;
+}
+.footer{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color:rgb(202, 193, 193);
+  font-size: small;
+}
+.footer-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a{
+  text-decoration: none;
+  color: rgb(193, 176, 176);
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
